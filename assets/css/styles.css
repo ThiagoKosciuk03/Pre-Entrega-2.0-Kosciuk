@@ -1,0 +1,393 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/Fondos/Fondo-oscuro.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    -webkit-transform: translate3D(0, 0, 0);
+    /*background: #e9ebeb;*/
+    text-align: center;
+    
+}
+
+
+/*Header*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background-color: #0e0e0e;
+    
+}
+
+nav .Logo{
+    justify-content: flex-start;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -10px;
+
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+.LinksTapbar{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.LinksTapbar:hover{
+    color: rgb(255, 76, 76);
+}
+/*Header*/
+
+
+
+/*Inicio-Box-Ligth*/
+/*body afectando al Box-Ligth-Index*/
+
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    background: #282929;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+    border: 3px solid black;
+}
+
+#start{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    font-size: 75px;
+}
+
+.imagen-Box-Ligth{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 75px;
+}
+
+#slide1,#slide2,#slide3,#slide4,#slide5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    font-size: 75px;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 0px;
+    left: -190px;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    color: transparent;
+}
+
+
+
+.btn a .imagen-nav-index{
+    width: 120px;
+    height: 63px;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 12px;
+    border: 2px solid black;
+}
+
+.btn:hover{
+   transform: scale(1.2);
+   transition: 0.1s ease-in; 
+}
+
+/*active slider using :target */
+#slide1:target,#slide2:target,#slide3:target,#slide4:target,#slide5:target{
+    animation: slide 1.5s ease-in-out forwards;
+}
+
+@keyframes slide {
+   0%{font-size: 0px; opacity: 1;}
+   100%{font-size: 75px; opacity: 1;} 
+}
+
+/*Box Ligth afectando a proyectos 2 */
+
+.wrapper-2{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container-2{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    background: #282929;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+    border: 3px solid black;
+}
+
+.start-2{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    font-size: 75px;
+}
+
+.imagen-Box-Ligth-2{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 75px;  
+}
+
+#slide1-2,#slide2-2,#slide3-2,#slide4-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    font-size: 75px;   
+}
+
+.navigation-2{
+    position: absolute;
+    bottom: 0px;
+    left: -190px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-2{
+    float: left;
+    margin: 6px;
+    width: 120px;
+    height: 63px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.btn-2 a .imagen-nav-index-2{
+    width: 120px;
+    height: 63px;
+    display: block;
+    letter-spacing: 2px;
+    font-size: 12px;
+    border: 2px solid black;
+}
+
+.btn-2:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in;  
+}
+
+#slide1-2:target,#slide2-2:target,#slide3-2:target,#slide4-2:target{
+    animation: slide 1.5s ease-in-out forwards;  
+}
+
+@keyframes slide-2 {
+    0%{font-size: 0px; opacity: 1;}
+    100%{font-size: 75px; opacity: 1;} 
+ }
+
+/*Aca termina box ligth afectanddo Proyectos 2*/
+
+
+
+
+
+
+
+
+.Imagenes{
+    width: 300px;
+    height: 200px;
+    padding: 10px; 
+    margin-left: 120px;
+}
+
+/*Footer  seccion Proyectos,Obbras y Detalles*/
+.seccion-obras {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 80px;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Footer  seccion Proyectos,Obbras y Detalles */
+
+/*Footer  seccion Index  */
+
+.seccion-index{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Footer  seccion Proyectos,Obbras y Detalles*/
+
+
+/*Footer*/
+.font-link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.font-link:hover{
+    transition: all .3s ease;
+    color: aqua;
+}
+
+.logo-footer{
+   width: 200px;
+    height: 100px;
+   margin-bottom: 1rem; 
+}
+
+.footer-menu-container{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all .3s ease;
+    color: aqua;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyrigth{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/*Footer*/
+
+
+.Parrafos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 300px;
+    font-size: 25px;
+}
+
+.Parrafo-Nos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    font-size: 22px; 
+    padding: 40px;
+}
+
+.TitulosPagina {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:  center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 45px;
+    color: white;
+}
+
+
+
+
+.ImagenesObrasEjecutadas{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    padding: 10px;  
+    }
+
+
+.ImagenesDetalles {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+
+
+
